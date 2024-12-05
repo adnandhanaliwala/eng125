@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .sudoku-container {
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sudoku-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .sudoku-header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .reset-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .reset-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .sudoku-board {
+    display: grid;
+    grid-template-rows: repeat(9, 40px);
+    grid-gap: 2px;
+    margin: auto;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    padding: 5px;
+  }
+  
+  .sudoku-row {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    gap: 2px;
+  }
+  
+  .sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .sudoku-cell:focus {
+    border: 2px solid #007bff;
+  }
+  
+  .preset-cell {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .sudoku-controls {
+    margin-top: 20px;
+  }
+  
+  .validate-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .validate-button:hover {
+    background-color: #218838;
+  }
+  
+  .sudoku-message {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+  }
+  .home-link {
+    padding: 10px 15px; /* Same padding as reset button */
+    font-size: 0.875rem;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: inline-block; /* Ensures it behaves like a button */
+    text-align: center;
+    height: 15px; /* Ensures consistent button height */
+    line-height: 15px; /* Centers text vertically */
+  }
+  
+  .home-link:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
